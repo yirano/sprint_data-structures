@@ -22,7 +22,6 @@ for name_1 in names_1:
         if name_1 == name_2:
             duplicates.append(name_1)
 
-'''
 # * MY code (0.127)
 bst = BSTNode('O')
 for name in names_1:
@@ -33,11 +32,15 @@ for dupe in names_2:
         duplicates.append(dupe)
     else:
         pass
+'''
+
 # ---------- Stretch Goal -----------
 # Python has built-in tools that allow for a very efficient approach to this problem
 # What's the best time you can accomplish?  Thare are no restrictions on techniques or data
 # structures, but you may not import any additional libraries that you did not write yourself.
 
+# * Stretch (0.00482)
+duplicates = list(set(names_1) & set(names_2))
 
 # print('List: ', duplicates)
 # print('Length: ', len(duplicates))
